@@ -1,0 +1,3 @@
+/Users/tanx/Desktop/Estructuras de Datos Lineales/Notaciones/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tanx/Desktop/Estructuras de Datos Lineales/Notaciones/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tanx/Desktop/Estructuras de Datos Lineales/Notaciones/cmake-build-debug/CMakeFiles/Notaciones.dir
