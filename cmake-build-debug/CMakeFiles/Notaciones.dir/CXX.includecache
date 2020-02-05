@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tanx/Desktop/Estructuras de Datos Lineales/Notaciones/nodo.h
+
+/Users/tanx/Desktop/Estructuras de Datos Lineales/Notaciones/pila_ligada.h
+string
+-
+nodo.h
+/Users/tanx/Desktop/Estructuras de Datos Lineales/Notaciones/nodo.h
+
+/Users/tanx/Desktop/Estructuras de Datos Lineales/Notaciones/posfija.cpp
+iostream
+-
+string
+-
+posfija.h
+/Users/tanx/Desktop/Estructuras de Datos Lineales/Notaciones/posfija.h
+
+/Users/tanx/Desktop/Estructuras de Datos Lineales/Notaciones/posfija.h
+string
+-
+pila_ligada.h
+/Users/tanx/Desktop/Estructuras de Datos Lineales/Notaciones/pila_ligada.h
+

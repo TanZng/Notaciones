@@ -10,7 +10,6 @@ int main() {
     string posfija = in2pos(infija);
     int resultado = evaluar(posfija);
     
-    cout << "Expresión en notación infija: " << infija << endl;
     cout << "Expresión en notación posfija: " << posfija << endl;
     cout << "Evaluación: " << to_string(resultado) << endl;
     
