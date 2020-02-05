@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    string infija = "( 3 * (4 + 5) * (7 - 2))";
+    string infija = "(3+(4+5)*(7-2))";
     string posfija = in2pos(infija);
     int resultado = evaluar(posfija);
     

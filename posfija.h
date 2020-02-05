@@ -25,9 +25,8 @@ bool esOperador( char p ){
     return  regresar;
 }
 
-void casoA( int token, std::string &salida ){
+void casoA( int token, std::string &salida){
     salida += token;
-    salida += " ";
 }
 
 void casoB( int token, Pila<char> &pila){
@@ -59,10 +58,17 @@ void casoD( char p, Pila<char> &pilaops, std::string &salida){
 std::string in2pos( std::string infija ) {
     std::string salida = "";
     Pila<char> pilaops;
+    int i = 0;
 
-    for( int i = 0; i < infija.length(); i++){
+    while( i < infija.length() ){
         if ( esNumero(infija[i]) ){
-            casoA( infija[i], salida);
+            while ( infija[i] != ' ' and infija[i] != ')'
+                    and infija[i] != '(' and !esOperador(infija[i]) ){
+                casoA( infija[i], salida);
+                i ++;
+            }
+            i--;
+            salida += ' ';
         }
         else if ( infija[i] == '(' ){
             casoB( infija[i], pilaops);
@@ -73,6 +79,7 @@ std::string in2pos( std::string infija ) {
         else if ( esOperador( infija[i] ) ){
             casoD( infija[i], pilaops, salida );
         }
+        i++;
     }
 
     return salida;
@@ -102,14 +109,23 @@ void realizarOperaciones( Pila<int> &pilaoperandos, char p){
 }
 
 int evaluar(std::string posfija) {
+    std::string numero;
     Pila<int> pilaoperandos;
-    for ( int i = 0; i < posfija.length(); i++){
+    int i = 0;
+    while ( i < posfija.length()){
         if ( esNumero(posfija[i]) ){
-            pilaoperandos.push(posfija[i] - '0');
+            numero = "";
+            while( posfija[i] != ' ' ){
+                numero += posfija[i];
+                i ++;
+            }
+            int num = std::stoi(numero);
+            pilaoperandos.push(num );
         }
         else if ( esOperador(posfija[i])){
             realizarOperaciones( pilaoperandos, posfija[i]);
         }
+        i++;
     }
     return pilaoperandos.top();
 }
