@@ -45,12 +45,10 @@ void casoC( Pila<char> &pila, std::string &salida ){
 }
 
 void casoD( char p, Pila<char> &pilaops, std::string &salida){
-    if( pilaops.top() == p or pilaops.top() == '*'){
-        while( pilaops.top() == p or pilaops.top() == '*' or pilaops.top() == '/' ){
-            salida += pilaops.top();
-            salida += " ";
-            pilaops.pop();
-        }
+    while( pilaops.top() == p or pilaops.top() == '*' or pilaops.top() == '/' ){
+        salida += pilaops.top();
+        salida += " ";
+        pilaops.pop();
     }
     pilaops.push(p);
 }
