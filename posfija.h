@@ -62,8 +62,7 @@ std::string in2pos( std::string infija ) {
 
     while( i < infija.length() ){
         if ( esNumero(infija[i]) ){
-            while ( infija[i] != ' ' and infija[i] != ')'
-                    and infija[i] != '(' and !esOperador(infija[i]) ){
+            while ( esNumero( infija[i] ) ){
                 casoA( infija[i], salida);
                 i ++;
             }
