@@ -30,8 +30,11 @@ b. If the char is an **operator**, *pop* the items of ***pilaoperandos*** twice.
 
 ## About the code
 I used a linked stack :arrow_right: [pila_ligada.h](https://github.com/TanZng/Notaciones/blob/master/pila_ligada.h "pila_ligada.h")
+
 The nodes of the linked stack :arrow_right: [nodo.h](https://github.com/TanZng/Notaciones/blob/master/nodo.h "nodo.h")
+
 The algorithms are implemented in C++ :arrow_right: [posfija.h](https://github.com/TanZng/Notaciones/blob/master/posfija.h "posfija.h")
+
 You can found the main  :arrow_right: [posfija.cpp](https://github.com/TanZng/Notaciones/blob/master/posfija.cpp "posfija.cpp")
 
 
